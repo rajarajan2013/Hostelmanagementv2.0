@@ -1,6 +1,6 @@
-import forgot from './components/authentication/forgot'
-import login from './components/authentication/login'
-import signup from './components/authentication/signup'
+import forgot from './pages/forgot'
+import login from './pages/login'
+import signup from './pages/signup'
 import { Route,Routes } from 'react-router-dom'
 
 function App () {
