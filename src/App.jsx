@@ -1,19 +1,20 @@
-import forgot from './pages/forgot'
-import login from './pages/login'
-import signup from './pages/signup'
-import superadmin from './pages/superadmin'
-import hostel from './pages/hostel'
-import header from './components/header'
-import nav from './components/navbar'
+import Forgot from './pages/forgot'
+import Login from './pages/login'
+import Signup from './pages/signup'
+import Superadmin from './pages/superadmin'
+import Hostel from './pages/hostel'
+import Header from './components/header'
+import Nav from './components/navbar'
 import { Route,Routes } from 'react-router-dom'
 
 function App () {
-  return(
-    <Routes> 
-      <Route path="forgot" element={forgot} />
-      <Route path="login" element={login}/>
-      <Route path="signup" element={signup}/>
-    </Routes>
+      return(
+          <div>
+            <Login/>
+            <Forgot/>
+            <Signup/> 
+          </div>
   )
 }
 
+export default App;
