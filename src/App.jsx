@@ -5,7 +5,7 @@ import Signup from './pages/signup'
 // import Hostel from './pages/hostel'
 // import Header from './components/header'
 // import Nav from './components/navbar'
-import { Route,Routes } from 'react-router-dom'
+import {BrowserRouter, Route,Routes  } from 'react-router-dom'
 
 function App () {
       return(
