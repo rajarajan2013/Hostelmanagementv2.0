@@ -1,44 +1,32 @@
 import React from 'react'
 import img1 from "../assets/srm logo.png"
 
-export default function forgot() {
+function forgot() {
     return (
-            <div class="flex container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-5 d-none d-md-block image-container"></div>
-
-                    <div class="col-lg-7 col-md-7 form-container">
-                        <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box">
-                            <div class="text-center logo mb-3">
-                                <img src={img1} width="150px" />
-                    </div>
-                    <div class="reset-form d-block">
-                    <form class="reset-password-form">
-                        <h4 class="mb-3">Reset your password</h4>
-                        <p class="mb-3 text-grey">Please enter your email address</p>
-                        <div class="form-input">
-                        <span><i class="fa fa-envelope"></i></span>
-                        <input type="email" placeholder="Email Address" required />
-                        </div>
-                        <div class="mb-3">
-                        <button class="btn" type="submit">Send Reset link</button>
-                        </div>
-                    </form>
-                    </div>
-                    <div class="reset-confirmation d-none">
-                    <div class="mb-4">
-                        <h4 class="mb-3">Link was sent</h4>
-                        <h6 class="text-white">Please check your inbox</h6>
-                    </div>
-                    <div>
-                        <a href="login.html">
-                        <button type="submit" class="btn">Login Now</button>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                </div>
+        <div className='flex justify-center mt-4'>
+        <div>
+            <div class='flex justify-center' >
+                <img src={img1} alt="SRM pa"/>
             </div>
+            <div className='text-center mt-4' >
+                Hostel Management
+            </div>
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/#" >
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Please enter your email address</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email Address"/>
+                </div>
+                <div class='flex justify-center' >
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"> Send Reset Link
+                        </button>
+                    </a>
+                    
+                </div>
+            </form>
         </div>
+    </div>
     )
 }
+
+export default forgot
