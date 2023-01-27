@@ -9,7 +9,7 @@ function signup() {
                 <img src={img3} alt="SRM pa"/>
             </div>
             <div className='text-center mt-4' >
-                Hostel Management
+                Create a User
             </div>
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/#" >
                 <div class="mb-4">
@@ -23,12 +23,11 @@ function signup() {
                 </div>
                 <div class="flex items-center justify-between">
                 <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-                <div>
+                <div class='inline-block'>
                     <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Choose a user mode</option>
+                        <option selected>Choose role</option>
                         <option value="mal">Male</option>
                         <option value="fem">Female</option>
-                        <option value="adm">Admin</option>
                         <option value="sup">SuperAdmin</option>
                     </select>
                 </div>
@@ -36,13 +35,8 @@ function signup() {
                 <div class='flex justify-evenly'>
                     <div>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4" type="button">
-                            Sign In
+                            Sign In  
                         </button>
-                    </div>
-                    <div>
-                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-                            Forgot Password?
-                        </a>
                     </div>
                 </div>
             </form>

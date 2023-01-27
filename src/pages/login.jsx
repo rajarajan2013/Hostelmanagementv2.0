@@ -9,7 +9,7 @@ function login () {
                     <img src={img} alt="SRM pa"/>
                 </div>
                 <div className='text-center mt-4' >
-                    Hostel Management
+                    Login
                 </div>
                 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/#" >
                     <div class="mb-4">
@@ -25,10 +25,9 @@ function login () {
                     <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
                     <div>
                         <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Choose a user mode</option>
+                            <option selected>Choose your role</option>
                             <option value="mal">Male</option>
                             <option value="fem">Female</option>
-                            <option value="adm">Admin</option>
                             <option value="sup">SuperAdmin</option>
                         </select>
                     </div>
