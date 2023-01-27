@@ -5,6 +5,11 @@ import Signup from './pages/signup'
 // import Hostel from './pages/hostel'
 // import Header from './components/header'
 // import Nav from './components/navbar'
+//import Home from "./pages/home"
+//import Attendance from "./pages/attendance"
+//import Fee from "./pages/fee"
+//import rooms from "./pages/rooms"
+//import Report from "./pages/report"
 import {BrowserRouter, Route,Routes  } from 'react-router-dom'
 
 function App () {
