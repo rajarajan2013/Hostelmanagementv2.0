@@ -1,81 +1,27 @@
 import React from 'react'
-//The table parameters will be changed to a functional parameter later
+import Nav from "../components/navbar"
+
+const tablehead = ["S.No","Student ID","Student Name","Register No.", "Gender","Degree","Semester","Current Year","Branch","Booking Date","Hostel Name","Room Number","Room Type","Floor Name","Contact No.","Email","Father Name","Father Number","Father Email","Address","Pincode","Office Name","Booking Type"]
+
+const list= tablehead.map((value,index) =>
+<th scope="col" class="px-6 py-3">
+{value}
+</th>
+)
+
+
 function report() {
     return (
         <div>
+            <Nav/>
             <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
                             <tr class="border-solid border-2 border-black" >
-                                <th scope="col" class="px-6 py-3">
-                                    S. No
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Student ID
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Student Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Register No
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Gender
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Degree
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Semester
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Current Year
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Branch
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Booking Date
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Hostel Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Room Number
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Room Type
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Floor Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Contact No.
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Email
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Father Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Father Number
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Father Email
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Address
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Pincode
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Office Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Booking Type
-                                </th>
+                                {tablehead.map((value,index) => (
+                                    <th scope="col" class="px-6 py-3">
+                                    {value}
+                                    </th>))}
                             </tr>
                         </thead>
                         <tbody class="" >

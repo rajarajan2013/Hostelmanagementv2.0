@@ -1,5 +1,9 @@
 import React from 'react'
 import Nav from "../components/navbar"
+
+const para =["S.No","Student Name","Registration Number","Branch","Room No.","Booking Type","Total Amount"]
+
+
 function fee() {
     return (
         <div>
@@ -8,27 +12,11 @@ function fee() {
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
                             <tr class="border-solid border-2 border-black" >
-                                <th scope="col" class="px-6 py-3">
-                                    S. No
+                                {para.map((value,index)=> (
+                                    <th scope="col" class="px-6 py-3">
+                                     {value}
                                 </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Student Name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Registration Number
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Branch
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Room No.
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Booking Type
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Total Amount
-                                </th>
+                                ))}
                             </tr>
                         </thead>
                         <tbody class="" >
