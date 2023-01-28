@@ -21,18 +21,20 @@ function login () {
                     <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************"/>
                     <p class="text-red-500 text-xs italic">Please choose a password.</p>
                     </div>
-                    <div class="flex items-center justify-between">
-                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-                    <div>
-                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Choose your role</option>
-                            <option value="mal">Male</option>
-                            <option value="fem">Female</option>
-                            <option value="sup">SuperAdmin</option>
-                        </select>
+                    <div class="grid grid-rows-2">
+                        <div>
+                            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+                        </div>
+                        <div>
+                            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  mb-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose your role</option>
+                                <option value="mal">Male</option>
+                                <option value="fem">Female</option>
+                                <option value="sup">SuperAdmin</option>
+                            </select>
+                        </div>
                     </div>
-                    </div>
-                    <div class='flex justify-evenly'>
+                    <div class=''>
                         <div>
                             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4" type="button">
                                 Sign In

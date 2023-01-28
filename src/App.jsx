@@ -7,9 +7,9 @@ import Signup from './pages/signup'
 // import Nav from './components/navbar'
 //import Home from "./pages/home"
 //import Attendance from "./pages/attendance"
-//import Fee from "./pages/fee"
+import Fee from "./pages/fee"
 //import rooms from "./pages/rooms"
-//import Report from "./pages/report"
+import Report from "./pages/report"
 import {BrowserRouter, Route,Routes  } from 'react-router-dom'
 
 function App () {
@@ -19,6 +19,8 @@ function App () {
             <Route path="/" element={<Login/>} />
             <Route path="/signup" element={<Signup/>} />
             <Route path="/forgotpassword" element={<Forgot/>} />
+            <Route path="/fee" element={<Fee/>} />
+            <Route path="/report" element={<Report/>} />
           </Routes>
         </BrowserRouter>  
   )
