@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from "../components/navbar"
+import Nav from "../../components/navbar"
 
 const para =["S.No","Student Name","Registration Number","Branch","Room No.","Booking Type","Total Amount"]
 
 
-function fee() {
+function Bookingrep() {
     return (
         <div>
             <Nav/> 
@@ -52,4 +52,4 @@ function fee() {
     )
 }
 
-export default fee
+export default Bookingrep

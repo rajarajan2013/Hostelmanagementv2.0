@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../assets/srm logo.png"
+import img1 from "../../assets/srmlogo.png"
 
 function forgot() {
     return (

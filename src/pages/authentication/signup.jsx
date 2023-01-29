@@ -1,5 +1,5 @@
 import React from 'react'
-import img3 from "../assets/srm logo.png"
+import img3 from "../../assets/srmlogo.png"
 
 function signup() {
     return (
