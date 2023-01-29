@@ -1,6 +1,6 @@
 import React from 'react'
 
-function rooms() {
+function Rooms() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function rooms() {
     )
 }
 
-export default rooms
+export default Rooms

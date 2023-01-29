@@ -1,6 +1,6 @@
 import React from 'react'
 
-function attendance() {
+function Attendancerep() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function attendance() {
     )
 }
 
-export default attendance
+export default Attendancerep

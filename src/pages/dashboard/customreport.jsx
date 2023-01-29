@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from "../components/navbar"
+import Nav from "../../components/navbar"
 
 const tablehead = ["S.No","Student ID","Student Name","Register No.", "Gender","Degree","Semester","Current Year","Branch","Booking Date","Hostel Name","Room Number","Room Type","Floor Name","Contact No.","Email","Father Name","Father Number","Father Email","Address","Pincode","Office Name","Booking Type"]
 
@@ -10,7 +10,7 @@ const list= tablehead.map((value,index) =>
 )
 
 
-function report() {
+function Customrep() {
     return (
         <div>
             <Nav/>
@@ -55,4 +55,4 @@ function report() {
     )
 }
 
-export default report
+export default Customrep
