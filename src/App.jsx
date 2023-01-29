@@ -6,6 +6,8 @@ import Login from './pages/authentication/login'
 import Signup from './pages/authentication/signup'
 import Bookingrep from "./pages/dashboard/bookingrep"
 import Report from "./pages/dashboard/masterrep"
+import Home from "./pages/dashboard/home"
+import Attendance from './pages/dashboard/attendancerep'
 
 function App () {
       return(
@@ -16,6 +18,8 @@ function App () {
             <Route path="/forgotpassword" element={<Forgot/>} />
             <Route path="/bookingrep" element={<Bookingrep/>} />
             <Route path="/report" element={<Report/>} />
+            <Route path="/home" element={<Home/>} />
+            <Route path="/attendance" element={<Attendance/>} />
           </Routes>
         </BrowserRouter>  
   )
