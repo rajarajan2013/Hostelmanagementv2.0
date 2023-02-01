@@ -8,15 +8,18 @@ import Bookingrep from "./pages/dashboard/bookingrep"
 import Report from "./pages/dashboard/masterrep"
 import Home from "./pages/dashboard/home"
 import Attendance from './pages/dashboard/attendancerep'
+import Masterrep from './pages/dashboard/masterrep'
 
 function App () {
       return(
         <BrowserRouter>
           <Routes>
+            
             <Route path="/" element={<Login/>} />
             <Route path="/signup" element={<Signup/>} />
             <Route path="/forgotpassword" element={<Forgot/>} />
             <Route path="/bookingrep" element={<Bookingrep/>} />
+            <Route path="/masterrep" element={<Masterrep/>} />
             <Route path="/report" element={<Report/>} />
             <Route path="/home" element={<Home/>} />
             <Route path="/attendance" element={<Attendance/>} />
