@@ -1,13 +1,36 @@
 import React from 'react'
 import Nav from "../../components/navbar"
 import t from "../../assets/srmlogo.png"
+import "tw-elements"
+import {BsSearch} from "react-icons/bs" 
 
+//I have an idea for functional component so going to try it later
 
 function home() {
     return (
         <div>
             <Nav/>
-            <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+            <div class="bg-yellow-300" >
+                <div class="flex" >
+                    <div class="mr-4 mt-4 flex flex-row">
+                        <img src={t} alt="srm pa" />
+                        <p class="block text-lg" >Learn.Leap.Lead</p>
+                    
+                    </div>
+                </div>
+                <form class="flex justify-center">
+                    <div class="border border-blue-500 flex justify-center rounded-lg shadow-transparent" >
+                        <input class="shadow appearance-none border border-blue-100 rounded-lg  py-2 px-3 text-gray-700 mr-4 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Name of Student"/>
+                        <button>
+                            <div class="m-4" >
+                                <BsSearch/>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+                
+            </div>
+           <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
                 <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"   aria-label="Slide 2"></button>
@@ -15,24 +38,24 @@ function home() {
                 </div>
                 <div class="carousel-inner relative w-full overflow-hidden">
                     <div class="carousel-item active relative float-left w-full">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="block w-full" alt="..."/>
+                        <img src={t} class="block w-full" alt="..."/>
                         <div class="carousel-caption hidden md:block absolute text-center">
-                            <h5 class="text-xl">First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5 class="text-xl">Name of Student</h5>
+                            <p>Please search by entering name of student</p>
                         </div>
                     </div>
                     <div class="carousel-item relative float-left w-full">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="block w-full"     alt="..."/>
+                        <img src={t} class="block w-full" alt="..."/>
                         <div class="carousel-caption hidden md:block absolute text-center">
-                            <h5 class="text-xl">Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5 class="text-xl">Student ID</h5>
+                            <p>Please search by entering name of student</p>
                         </div>
                     </div>
                 <div class="carousel-item relative float-left w-full">
-                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg" class="block w-full"  alt="..."/>
+                    <img src={t} class="block w-full"  alt="..."/>
                     <div class="carousel-caption hidden md:block absolute text-center">
-                        <h5 class="text-xl">Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5 class="text-xl">Registration No.</h5>
+                        <p>Please search by entering name of student</p>
                     </div>
                 </div>
             </div>

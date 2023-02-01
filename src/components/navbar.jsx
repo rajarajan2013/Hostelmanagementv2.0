@@ -5,7 +5,7 @@ const elem=["Home","Attendance","BookingRep Details","Rooms","Report"]
 
 function navbar() {
   return (
-          <nav class="bg-gray-200 border-white px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+          <nav class="bg-gray-200 border-white px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mb-4 border border-yellow-300">
         <div class="container flex flex-wrap items-center justify-between mx-auto bg-gray-200">
               <div class="flex items-center" >
                 <img src={navimg} class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
