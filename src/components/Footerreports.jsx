@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footerreports() {
   return (
-    <div><div class = "pagies">   
+    <div><div class = "pagies  py-2.5 mb-2">   
     <nav aria-label="Page navigation example">
       <ul class="inline-flex -space-x-px">
         <li>

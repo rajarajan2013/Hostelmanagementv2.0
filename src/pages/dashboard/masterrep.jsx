@@ -5,6 +5,8 @@ import Nav from "../../components/navbar"
 import Headerreports from '../../components/Headerreports'
 import Footerreports from '../../components/Footerreports'
 export default function hostel() {
+  const tablehead = ["S.No","Student ID","Student Name","Register No.", "Gender","Degree","Semester","Current Year","Branch","Booking Date","Hostel Name","Room Number","Room Type","Floor Name","Contact No.","Email","Father Name","Father Number","Father Email","Address","Pincode","Office Name","Booking Type"]
+
     return (
         <>
 
@@ -14,7 +16,7 @@ export default function hostel() {
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
                             <tr class="border-solid border-2 border-black" >
-                                {para.map((value,index)=> (
+                                {tablehead.map((value,index)=> (
                                     <th scope="col" class="px-6 py-3">
                                      {value}
                                 </th>
