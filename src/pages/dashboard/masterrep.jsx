@@ -1,21 +1,15 @@
 import { Input } from 'postcss'
 import React from 'react'
-import masterrep from './masterrep.css' 
+import './Masterrep.css' 
 import Nav from "../../components/navbar"
+import Fourbuttons from '../../components/fourbuttons'
 export default function hostel() {
     return (
-        
-        
         <>
 
         <Nav/>
-        <div class="button01">
-        <button type="button1" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">+Add</button>
-        <button type="button2" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Modify</button>
-        <button type="button3" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Save</button>
-        <button type="button4" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Done</button>
-        </div>
         
+        <Fourbuttons></Fourbuttons>
         <div class="container flex mx-auto">
             <div class="flex border-2 rounded">
             <button class="flex items-center justify-center px-4 border-r bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700">

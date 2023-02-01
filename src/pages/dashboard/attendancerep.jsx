@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../../components/navbar'
-import {AiOutlineDown} from "react-icons/ai"
+// import {AiOutlineDown} from "react-icons/ai"
 
 const opt=["Hostel Name","Floor Number","From","To","Month","Year","Absentees"]
 
