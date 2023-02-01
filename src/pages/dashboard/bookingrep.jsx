@@ -12,7 +12,7 @@ function Bookingrep() {
         <div>
             <Nav/> 
             <Headerreports/>
-                <div class="relative overflow-x-auto">
+            <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
                             <tr class="border-solid border-2 border-black" >
@@ -50,10 +50,10 @@ function Bookingrep() {
                             
                         </tbody>
                     </table>
-                </div>
+                </div>   
 
+         <Footerreports/>
         </div>
-       <Footerreports/>
     </>
         
     )

@@ -10,94 +10,45 @@ export default function hostel() {
 
         <Nav/>
         <Headerreports/>
-        <br/>
-        <br/>
-        
-        <table class="table table-bordered">
-      <thead class="thead-dark">
-        <tr>
-          <th>S.no</th>
-          <th>Student ID</th>
-          <th>Student Name</th>
-          <th>Register No</th>
-          <th>Gender</th>
-          <th>Degree</th>
-          <th>Semester</th>
-          <th>Current Year</th>
-          <th>Branch</th>
-          <th>Booking Date</th>
-          <th>Hostel Name</th>
-          <th>Room Number</th>
-          <th>Room Type</th>
-          <th>Floor Name</th>
-          <th>Contact No</th>
-          <th>Email</th>
-          <th>Father Name</th>
-          <th>Father Number</th>
-          <th>Father Email</th>
-          <th>Address</th>
-          <th>Pincode</th>
-          <th>Office Name</th>
-          <th>Booking Type</th>
-          <th>Total Amount</th>
-          <th>State Name</th>
-          <th>Religion Name</th>
-          <th>Community</th>
-          <th>Caste</th>
-          <th>Differently Abled</th>
-          <th>Father Income</th>
-          <th>Mother Income</th>
-          <th>Reporting Date</th>
-          <th>Vacating Date</th>
-          <th>AC Remote</th>
-          <th>Key Number</th>
-          <th>Other-Information</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-        </tr>
-      </tbody>
-    </table>
+        <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
+                            <tr class="border-solid border-2 border-black" >
+                                {para.map((value,index)=> (
+                                    <th scope="col" class="px-6 py-3">
+                                     {value}
+                                </th>
+                                ))}
+                            </tr>
+                        </thead>
+                        <tbody class="" >
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1.
+                                </th>
+                                <td class="px-6 py-4">
+                                    Venkat
+                                </td>
+                                <td class="px-6 py-4">
+                                    RA2011003010165
+                                </td>
+                                <td class="px-6 py-4">
+                                    B.tech
+                                </td>
+                                <td class="px-6 py-4">
+                                    101
+                                </td>
+                                <td class="px-6 py-4">
+                                    Online
+                                </td>
+                                <td class="px-6 py-4">
+                                    92000.00
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div> 
         <Footerreports/>
 
         
