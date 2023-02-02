@@ -3,10 +3,34 @@ import Nav from "../../components/navbar"
 import t from "../../assets/srmlogo.png"
 import "tw-elements"
 import {BsSearch} from "react-icons/bs" 
+import { useState } from 'react';
 
 //I have an idea for functional component so going to try it later
 
+const sample=[
+    {
+        Name:"Ramana",
+        ID:"BT7274",
+        Registration:"RA2111026010373",
+    }
+,{
+    Name:"Raja",
+    ID:"MOB1931",
+    Registration:"RA2111026010489",
+},
+{
+    Name:"Roy",
+    ID:"FS1041",
+    Registration:"RA2111026010237" 
+},
+]
+
 function home() {
+    const [data,search]=useState("")
+    const look =()=> {
+
+    }
+   // const filter=
     return (
         <div>
             <Nav/>
@@ -18,19 +42,19 @@ function home() {
                     
                     </div>
                 </div>
-                <form class="flex justify-center">
-                    <div class="border border-blue-500 flex justify-center rounded-lg shadow-transparent" >
-                        <input class="shadow appearance-none border border-blue-100 rounded-lg  py-2 px-3 text-gray-700 mr-4 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Name of Student"/>
-                        <button>
-                            <div class="m-4" >
-                                <BsSearch/>
-                            </div>
-                        </button>
-                    </div>
-                </form>
-                
-            </div>
-           <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+                <div>
+                    <form class="flex justify-center">
+                        <div class="border border-blue-500 flex justify-center rounded-lg shadow-transparent" >
+                            <input class="shadow appearance-none border border-blue-100 rounded-lg  py-2 px-3 text-gray-700 mr-4 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Name of Student"/>
+                            <button>
+                                <div class="m-4" >
+                                    <BsSearch/>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
                 <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"   aria-label="Slide 2"></button>
@@ -38,7 +62,7 @@ function home() {
                 </div>
                 <div class="carousel-inner relative w-full overflow-hidden">
                     <div class="carousel-item active relative float-left w-full">
-                        <img src={t} class="block w-full" alt="..."/>
+                        
                         <div class="carousel-caption hidden md:block absolute text-center">
                             <h5 class="text-xl">Name of Student</h5>
                             <p>Please search by entering name of student</p>
@@ -67,6 +91,7 @@ function home() {
                 <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            </div>
             </div>
         </div>
     )

@@ -1,111 +1,104 @@
-import React from 'react'
+import React, {useState} from "react"
 import Nav from '../../components/navbar'
 import "tw-elements"
 //import {AiOutlineDown} from "react-icons/ai"
 
-const opt=["Hostel Name","Floor Number","From","To","Current Month","Current Year","Absentees"]
-//const [index,increment]=useState(0)
-
+const options = ["Paari","Mullai"]
+const floor=["Ground",1,2,3,4,5,6,7,8,9]
+const par=["Name","Registration_ID","Date","Status"]
+const dat=[{
+    Name: "SRM1",
+    Registration_ID : "RA2111026010373",
+    Dat: Date("19-03-2022"),
+    Status: "Present",
+},
+{
+    Name: "SRM2",
+    Registration_ID : "RA2111026010374",
+    Dat: Date("09-03-2022"),
+    Status: "Absent",
+},
+]
+const para=["Name","Registration_ID","Dat","Status"]
 
 function attendancerep() {
+    const [value,index]= useState("Hostel Name")
+
+const submit = () =>{
+    console.log(value)
+}
   return (
     <div>
         <Nav/>
-        <div class="ml-4 grid grid-cols-7 gap-4 justify-start">
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">Hostel Name
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">Floor Number
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">From (date)
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">To (date)
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">Current Month
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown relative">
-                    <button class="dropdown-toggle px-6 py-2.5 bg-blue-600 text-white font-medium      text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white transition duration-150 ease-in-out flex   items-center whitespace-nowrap" type="button" id="dropdownMenuButton1"     data-bs-toggle="dropdown" aria-expanded="false">Current Year
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"        >Action</a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                 <div class="form-check form-switch">
+        <div>
+            <form class="ml-2 grid grid-cols-7" >
+                <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
+                {options.map((value) => (
+                    <option class="bg-white" value={value} key={value}>
+                        {value}
+                    </option>
+                ))}
+                </select>
+                <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
+                {floor.map((value) => (
+                    <option class="bg-white" value={value} key={value}>
+                        {value}
+                    </option>
+                ))}
+                </select>
+                <span class=" max-w-fit">
+                    <label class="mr-1" >From</label>
+                    <input type="date" class="bg-blue-500 rounded-lg" />
+                </span>
+                <span class=" max-w-fit">
+                    <label class="mr-1" >To</label>
+                    <input type="date" class="bg-blue-500 rounded-lg" />
+                </span>
+                <span class=" max-w-fit">
+                    <input type="month" class="bg-blue-500 rounded-lg" />
+                </span>
+                <div class="form-check form-switch max-w-fit border border-blue-400 rounded-lg mt-1 mb-1">
                     <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                    <label class="form-check-label inline-block text-gray-800" for="flexSwitchCheckDefault">Present</label>
+                    <label class="form-check-label inline-block text-gray-800 mr-1" for="flexSwitchCheckDefault">Present</label>
                 </div>
-             </div>
-             <div class="flex space-x-2 justify-center">
-                <button type="button" class="inline-block px-6 py-2.5 bg-blue-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-300 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-500 active:shadow-lg transition duration-150 ease-in-out">Submit</button>
-            </div>
+                <button type="button" class="bg-blue-500 rounded-lg max-w-fit pl-1 pr-1" onClick={submit}>
+                    <span class="">
+                        Submit
+                    </span>
+                </button>
+            </form>
         </div>
+        <table class="mt-4 w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
+                            <tr class="border-solid border-2 border-black" >
+                                {para.map((value,index)=> (
+                                    <th scope="col" class="px-6 py-3">
+                                     {value}
+                                </th>
+                                ))}
+                            </tr>
+                        </thead>
+                        <tbody class="" >
+                           
+                                {dat.map(({Name,Registration_ID,Dat,Status})=> (
+                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+                                        <td class="px-6 py-4">
+                                            {Name}
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            {Registration_ID}
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            {Dat}
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            {Status}
+                                        </td>
+                                    </tr>
+                                ))}
+                           
+                        </tbody>
+                    </table>
     </div>
   )
 }
