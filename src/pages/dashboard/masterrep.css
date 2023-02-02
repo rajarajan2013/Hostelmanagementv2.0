@@ -44,6 +44,6 @@ td {
 .scrollbar{
   padding: 34px;
   position: absolute;
-  top:50%;
-  right: 50%;;
+  top: 10%;
+  left: 40%;
 }
