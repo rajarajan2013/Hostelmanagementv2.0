@@ -4,7 +4,8 @@ import './Masterrep.css'
 import Nav from "../../components/navbar"
 import Headerreports from '../../components/Headerreports'
 import Footerreports from '../../components/Footerreports'
-export default function hostel() {
+export default function Masterrep() {
+
   const tablehead = ["S.No","Student ID","Student Name","Register No.", "Gender","Degree","Semester","Current Year","Branch","Booking Date","Hostel Name","Room Number","Room Type","Floor Name","Contact No.","Email","Father Name","Father Number","Father Email","Address","Pincode","Office Name","Booking Type"]
 
     return (

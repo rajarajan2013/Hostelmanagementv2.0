@@ -3,7 +3,7 @@ import Nav from "../../components/navbar"
 import t from "../../assets/srmlogo.png"
 
 
-function home() {
+function Home() {
     return (
         <div>
             <Nav/>
@@ -49,4 +49,4 @@ function home() {
     )
 }
 
-export default home
+export default Home

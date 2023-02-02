@@ -10,7 +10,7 @@ const list= tablehead.map((value,index) =>
 )
 
 
-function report() {
+function Customrep() {
     return (
         <div>
             <Nav/>
@@ -55,4 +55,4 @@ function report() {
     )
 }
 
-export default report
+export default Customrep

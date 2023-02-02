@@ -4,7 +4,7 @@ import Nav from '../../components/navbar'
 
 const opt=["Hostel Name","Floor Number","From","To","Month","Year","Absentees"]
 
-function attendancerep() {
+function Attendancerep() {
   return (
     <div>
         <Nav/>
@@ -26,4 +26,4 @@ function attendancerep() {
   )
 }
 
-export default attendancerep
+export default Attendancerep
