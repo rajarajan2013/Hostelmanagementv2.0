@@ -9,6 +9,7 @@ import Home from "./pages/dashboard/home"
 import Attendancerep from './pages/dashboard/attendancerep'
 import Masterrep from './pages/dashboard/masterrep'
 import Customrep from './pages/dashboard/customreport'
+import Occupancyrep from './pages/dashboard/occupancyrep'
 
 function App () {
       return(
@@ -24,6 +25,7 @@ function App () {
             <Route path="/masterrep" element={<Masterrep/>} />
             <Route path="/customrep" element={<Customrep/>} />
             <Route path="/attendancerep" element={<Attendancerep/>} />
+            <Route path="/occupancyrep" element={<Occupancyrep/>} />
           </Routes>
         </BrowserRouter>  
   )
