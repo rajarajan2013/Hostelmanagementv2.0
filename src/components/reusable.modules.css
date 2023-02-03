@@ -1,0 +1,11 @@
+.bt1{
+    @apply text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2
+}
+
+.t1{
+    @apply border-solid border-2 border-black w-1/5 overflow-hidden
+}
+
+.t2{
+    @apply text-[20px] p-10 text-center align-middle
+}

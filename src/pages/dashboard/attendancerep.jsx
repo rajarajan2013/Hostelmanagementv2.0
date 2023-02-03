@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import Nav from '../../components/navbar'
 import "tw-elements"
+import Style from "../../components/reusable.modules.css"
 //import {AiOutlineDown} from "react-icons/ai"
 
 const options = ["Paari","Mullai"]

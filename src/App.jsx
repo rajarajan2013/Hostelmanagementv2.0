@@ -8,7 +8,6 @@ import Bookingrep from "./pages/dashboard/bookingrep"
 import Report from "./pages/dashboard/masterrep"
 import Home from "./pages/dashboard/home"
 import Attendance from './pages/dashboard/attendancerep'
-import Trial from './pages/dashboard/trial'
 
 function App () {
       return(
@@ -21,7 +20,6 @@ function App () {
             <Route path="/report" element={<Report/>} />
             <Route path="/home" element={<Home/>} />
             <Route path="/attendance" element={<Attendance/>} />
-            <Route path="trial" element={<Trial/>} />
           </Routes>
         </BrowserRouter>  
   )
