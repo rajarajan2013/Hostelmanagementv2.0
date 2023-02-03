@@ -32,41 +32,45 @@ const submit = () =>{
     <div>
         <Nav/>
         <div>
-            <form class="ml-2 grid grid-cols-7" >
-                <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
-                {options.map((value) => (
-                    <option class="bg-white" value={value} key={value}>
-                        {value}
-                    </option>
-                ))}
-                </select>
-                <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
-                {floor.map((value) => (
-                    <option class="bg-white" value={value} key={value}>
-                        {value}
-                    </option>
-                ))}
-                </select>
-                <span class=" max-w-fit">
-                    <label class="mr-1" >From</label>
-                    <input type="date" class="bg-blue-500 rounded-lg" />
-                </span>
-                <span class=" max-w-fit">
-                    <label class="mr-1" >To</label>
-                    <input type="date" class="bg-blue-500 rounded-lg" />
-                </span>
-                <span class=" max-w-fit">
-                    <input type="month" class="bg-blue-500 rounded-lg" />
-                </span>
-                <div class="form-check form-switch max-w-fit border border-blue-400 rounded-lg mt-1 mb-1">
-                    <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                    <label class="form-check-label inline-block text-gray-800 mr-1" for="flexSwitchCheckDefault">Present</label>
-                </div>
-                <button type="button" class="bg-blue-500 rounded-lg max-w-fit pl-1 pr-1" onClick={submit}>
-                    <span class="">
-                        Submit
+            <form >
+                <div class="ml-16 grid grid-cols-5" >
+                    <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
+                    {options.map((value) => (
+                        <option class="bg-white" value={value} key={value}>
+                            {value}
+                        </option>
+                    ))}
+                    </select>
+                    <select class=" bg-blue-500 rounded-lg max-w-fit" value={value} onChange={(e) => index(e.target.value)}>
+                    {floor.map((value) => (
+                        <option class="bg-white" value={value} key={value}>
+                            {value}
+                        </option>
+                    ))}
+                    </select>
+                    <span class=" max-w-fit">
+                        <label class="mr-1" >From</label>
+                        <input type="date" class="bg-blue-500 rounded-lg" />
                     </span>
-                </button>
+                    <span class=" max-w-fit">
+                        <label class="mr-1" >To</label>
+                        <input type="date" class="bg-blue-500 rounded-lg" />
+                    </span>
+                    <span class=" max-w-fit">
+                        <input type="month" class="bg-blue-500 rounded-lg" />
+                    </span>
+                </div>
+                <div class="grid grid-cols-2 mt-4 ml-16" >
+                    <div>
+                        <button type="button" class="" className="bt1" onClick={submit}>
+                                Submit
+                        </button>
+                    </div>
+                    <div class="form-check form-switch max-w-fit border border-blue-400 rounded-lg mt-1 mb-0.5">
+                        <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                        <label class="form-check-label inline-block text-gray-800 mr-1" for="flexSwitchCheckDefault">Present</label>
+                    </div>
+                </div>
             </form>
         </div>
         <table class="mt-4 w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">

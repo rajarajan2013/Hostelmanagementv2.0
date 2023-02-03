@@ -1,5 +1,6 @@
 import React from 'react'
 import img from "../../assets/srmlogo.png"
+import style from "../../components/reusable.modules.css"
 
 function login () {
     return(
@@ -36,7 +37,7 @@ function login () {
                     </div>
                     <div class=''>
                         <div>
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4" type="button">
+                            <button className='bt1' type="button">
                                 Sign In
                             </button>
                         </div>
