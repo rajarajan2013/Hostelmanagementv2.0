@@ -2,6 +2,7 @@ import React from 'react'
 import Footerreports from '../../components/Footerreports'
 import Headerreports from '../../components/Headerreports'
 import Nav from "../../components/navbar"
+import Searchbar from '../../components/Searchbar'
 
 const para =["S.No","Student Name","Registration Number","Branch","Room No.","Booking Type","Total Amount"]
 
@@ -12,6 +13,7 @@ function Bookingrep() {
         <div>
             <Nav/> 
             <Headerreports/>
+            <Searchbar Placeholder="Search"/>
             <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">

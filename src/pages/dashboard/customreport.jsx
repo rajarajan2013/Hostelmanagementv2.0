@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from "../../components/navbar"
-import './Masterrep.css' 
+import './customreport.css' 
 
 // const tablehead = ["S.No","Student ID","Student Name","Register No.", "Gender","Degree","Semester","Current Year","Branch","Booking Date","HostelName Name","Room Number","Room Type","Floor Name","Contact No.","Email","Father Name","Father Number","Father Email","Address","Pincode","Office Name","Booking Type"]
 
@@ -237,8 +237,8 @@ function Customrep() {
                 <option>HostelName</option><option>FloorNo</option><option>RoonNo</option><option>PhoneNo</option><option>FatherNo</option><option>Address</option><option>CurrentYear</option><option>Degree</option><option>I</option></select></td></tr><tr><td>13.</td><td><select className="opt form-control" fdprocessedid="5airz"><option>None</option>
                 <option>HostelName</option><option>FloorNo</option><option>RoonNo</option><option>PhoneNo</option><option>FatherNo</option><option>Address</option><option>CurrentYear</option><option>Degree</option><option>I</option></select></td></tr></tbody></table>
                 
-                <button type="button1" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2">+Add Field</button>
-                <button type="button1" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2">Submit</button>
+                <button type="button1" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 mt-2">+Add Field</button>
+                <button type="button1" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 mt-2">Submit</button>
                 
                 </div>
       </>  

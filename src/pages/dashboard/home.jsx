@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "../../components/navbar"
-import t from "../../assets/srmlogo.png"
+import logo from "../../assets/srmlogo.png"
+import Searchbar from '../../components/Searchbar'
 
 
 
@@ -36,23 +37,25 @@ function Home() {
                 {/* <!-- Inner --> */}
                 <div class="carousel-inner relative w-full overflow-hidden">
                     {/* <!-- Single item --> */}
-                    <div class="carousel-item active relative float-left w-full">
-                        <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
-                            class="block w-full"
-                            alt="Motorbike Smoke" />
+                    <div class="carousel-item active relative float-none w-full object-center">
+                            <div>
+                            <img class=" object-center ml-32 mt-8 " src={logo} />
+                            </div>
+                            <div class="">
+                                <Searchbar Placeholder="Reg No"/>
+                            </div>
                         <div class="carousel-caption hidden md:block absolute text-center">
-                            <h5 class="text-xl">First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5 class="text-xl px-5 py-2.5 mb-2 mt-30">Registration Number</h5>
+                            <p class="px-5 pb-2.5 mb-2 ">Please search using reg no</p>
                         </div>
                     </div>
 
                     {/* <!-- Single item --> */}
                     <div class="carousel-item relative float-left w-full">
-                        <img
+                        {/* <img
                             src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
                             class="block w-full"
-                            alt="Mountaintop" />
+                            alt="Mountaintop" /> */}
                         <div class="carousel-caption hidden md:block absolute text-center">
                             <h5 class="text-xl">Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
@@ -61,10 +64,10 @@ function Home() {
 
                     {/* <!-- Single item --> */}
                     <div class="carousel-item relative float-left w-full">
-                        <img
+                        {/* <img
                             src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
                             class="block w-full"
-                            alt="Woman Reading a Book" />
+                            alt="Woman Reading a Book" /> */}
                         <div class="carousel-caption hidden md:block absolute text-center">
                             <h5 class="text-xl">Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
