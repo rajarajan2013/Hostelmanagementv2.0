@@ -1,12 +1,12 @@
 import React from 'react'
-import img from "../../assets/srmlogo.png"
+import logo from "../../assets/srmlogo.png"
 
 function login () {
     return(
         <div className='flex justify-center mt-4'>
             <div>
                 <div class='flex justify-center' >
-                    <img src={img} alt="SRM pa"/>
+                    <img src={logo} alt="SRM pa"/>
                 </div>
                 <div className='text-center mt-4' >
                     Login

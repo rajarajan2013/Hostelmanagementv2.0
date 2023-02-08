@@ -1,12 +1,12 @@
 import React from 'react'
-import img1 from "../../assets/srmlogo.png"
+import logo from "../../assets/srmlogo.png"
 
 function forgot() {
     return (
         <div className='flex justify-center mt-4'>
         <div>
             <div class='flex justify-center' >
-                <img src={img1} alt="SRM pa"/>
+                <img src={logo} alt="SRM pa"/>
             </div>
             <div className='text-center mt-4' >
                 Hostel Management
