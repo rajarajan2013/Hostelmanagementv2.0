@@ -13,7 +13,7 @@ function Bookingrep() {
         <div>
             <Nav/> 
             <Headerreports/>
-            <Searchbar Placeholder="Search"/>
+            <Searchbar Placeholder="Search" position="justify-center" />
             <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-solid border-2 border-black">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-solid border-2 border-black">
