@@ -12,22 +12,31 @@ const dat=[{
     Registration_ID : "RA2111026010373",
     Dat: Date("19-03-2022"),
     Status: "Present",
+    Hostel: "Paari",
 },
 {
     Name: "SRM2",
     Registration_ID : "RA2111026010374",
     Dat: Date("09-03-2022"),
     Status: "Absent",
+    Hostel: "Mullai",
 },
 ]
-const para=["Name","Registration_ID","Dat","Status"]
+const para=["Name","Registration_ID","Dat","Status","Hostel"]
 
 function attendancerep() {
     const [value,index]= useState("Hostel Name")
+    const [filtered,i]= useState(dat)
 
 const submit = () =>{
-    console.log(value)
-}
+    for(let j in dat){
+        if(value==dat[j].Hostel){
+            filtered(dat[j])
+        }
+        }
+    }
+
+    
   return (
     <div>
         <Nav/>
@@ -84,8 +93,9 @@ const submit = () =>{
                             </tr>
                         </thead>
                         <tbody class="" >
-                           
-                                {dat.map(({Name,Registration_ID,Dat,Status})=> (
+                                {filtered.map(({Name,Registration_ID,Dat,Status,Hostel})=> 
+                                
+                                (
                                      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
                                         <td class="px-6 py-4">
                                             {Name}
@@ -98,6 +108,9 @@ const submit = () =>{
                                         </td>
                                         <td class="px-6 py-4">
                                             {Status}
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            {Hostel}
                                         </td>
                                     </tr>
                                 ))}
