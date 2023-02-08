@@ -1,16 +1,13 @@
-import Forgot from './pages/forgot'
-import Login from './pages/login'
-import Signup from './pages/signup'
-// import Superadmin from './pages/superadmin'
-// import Hostel from './pages/hostel'
-// import Header from './components/header'
-// import Nav from './components/navbar'
-//import Home from "./pages/home"
-//import Attendance from "./pages/attendance"
-//import Fee from "./pages/fee"
-//import rooms from "./pages/rooms"
-//import Report from "./pages/report"
-import {BrowserRouter, Route,Routes  } from 'react-router-dom'
+import {BrowserRouter, Route,Routes } from 'react-router-dom'
+
+//pages
+import Forgot from './pages/authentication/forgot'
+import Login from './pages/authentication/login'
+import Signup from './pages/authentication/signup'
+import Bookingrep from "./pages/dashboard/bookingrep"
+import Report from "./pages/dashboard/masterrep"
+import Home from "./pages/dashboard/home"
+import Attendance from './pages/dashboard/attendancerep'
 
 function App () {
       return(
@@ -19,6 +16,10 @@ function App () {
             <Route path="/" element={<Login/>} />
             <Route path="/signup" element={<Signup/>} />
             <Route path="/forgotpassword" element={<Forgot/>} />
+            <Route path="/bookingrep" element={<Bookingrep/>} />
+            <Route path="/report" element={<Report/>} />
+            <Route path="/home" element={<Home/>} />
+            <Route path="/attendance" element={<Attendance/>} />
           </Routes>
         </BrowserRouter>  
   )
