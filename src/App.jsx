@@ -11,7 +11,7 @@ import Masterrep from './pages/dashboard/masterrep'
 import Customrep from './pages/dashboard/customreport'
 import Occupancyrep from './pages/dashboard/occupancyrep'
 
-function App () {
+function App () { 
       return(
         <BrowserRouter>
           <Routes>
