@@ -1,24 +1,31 @@
-import Forgot from './pages/forgot'
-import Login from './pages/login'
-import Signup from './pages/signup'
-// import Superadmin from './pages/superadmin'
-// import Hostel from './pages/hostel'
-// import Header from './components/header'
-// import Nav from './components/navbar'
-//import Home from "./pages/home"
-//import Attendance from "./pages/attendance"
-//import Fee from "./pages/fee"
-//import rooms from "./pages/rooms"
-//import Report from "./pages/report"
 import {BrowserRouter, Route,Routes  } from 'react-router-dom'
 
-function App () {
+//pages
+import Forgot from './pages/authentication/forgot'
+import Login from './pages/authentication/login'
+import Signup from './pages/authentication/signup'
+import Bookingrep from "./pages/dashboard/bookingrep"
+import Home from "./pages/dashboard/home"
+import Attendancerep from './pages/dashboard/attendancerep'
+import Masterrep from './pages/dashboard/masterrep'
+import Customrep from './pages/dashboard/customreport'
+import Occupancyrep from './pages/dashboard/occupancyrep'
+
+function App () { 
       return(
         <BrowserRouter>
           <Routes>
+            {/* //authentication routes */}
             <Route path="/" element={<Login/>} />
             <Route path="/signup" element={<Signup/>} />
             <Route path="/forgotpassword" element={<Forgot/>} />
+            {/* //Navbar routes */}
+            <Route path="/home" element={<Home/>} />
+            <Route path="/bookingrep" element={<Bookingrep/>} />
+            <Route path="/masterrep" element={<Masterrep/>} />
+            <Route path="/customrep" element={<Customrep/>} />
+            <Route path="/attendancerep" element={<Attendancerep/>} />
+            <Route path="/occupancyrep" element={<Occupancyrep/>} />
           </Routes>
         </BrowserRouter>  
   )
